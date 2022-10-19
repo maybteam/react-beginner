@@ -1,0 +1,43 @@
+/* 우리가 reset.css / normalize.css를 사용해야 하는 이유를 볼 수 있는 예시 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first-header {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 4px 2px 0 4px #ffdddd80;
+
+  background-color: #ffdddd;
+  color: #000000;
+}
+
+#second-header {
+  background-color: #e2b0ff;
+  color: #ffffff;
+}
+
+h3 {
+  background-color: #eabdc2;
+  color: rgb(0, 0, 0);
+}
+
+*:where([id$="header"], [class$="header"]) {
+  margin-top: 12px;
+}
+
+*[aria-label^="important"] {
+  background-color: blue;
+}
+
+ul {
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

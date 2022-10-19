@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS!</title>
+    <style>
+      /* 우리가 reset.css / normalize.css를 사용해야 하는 이유를 볼 수 있는 예시 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .first-header {
+        display: inline-block;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 4px 2px 0 4px #ffdddd80;
+
+        background-color: #ffdddd;
+        color: #000000;
+      }
+
+      #second-header {
+        background-color: #e2b0ff;
+        color: #ffffff;
+      }
+
+      h3 {
+        background-color: #eabdc2;
+        color: rgb(0, 0, 0);
+      }
+
+      *:where([id$="header"], [class$="header"]) {
+        margin-top: 12px;
+      }
+
+      *[aria-label^="important"] {
+        background-color: blue;
+      }
+
+      ul {
+        margin-top: 12px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="first-header">헤더1</h1>
+    <h2 id="second-header">헤더2</h2>
+    <h3 class="third-header">헤더3</h3>
+
+    <dl aria-label="important-informations">
+      <dt>제목</dt>
+      <dd>내용</dd>
+    </dl>
+
+    <ul>
+      <li>이놈!</li>
+      <li>저놈!</li>
+      <li>이자식!</li>
+    </ul>
+
+    <ol>
+      <li>하나!</li>
+      <li>둘!</li>
+      <li>셋!</li>
+    </ol>
+  </body>
+</html>
