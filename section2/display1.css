@@ -1,0 +1,31 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  /* display: inline-flex; */
+  /* flex-direction */
+  flex-wrap: wrap;
+  /* flex-flow: row wrap; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  resize: both;
+  overflow: auto;
+  gap: 2px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 1px solid #000;
+  /* flex: 1 1 0 */
+  flex: 1;
+}
+
+.item:nth-of-type(1) {
+  /* flex: 1 1 100px; */
+  align-self: flex-end;
+  order: 3;
+}
