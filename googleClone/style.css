@@ -28,7 +28,7 @@ button {
 
 .layout {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -104,6 +104,30 @@ button {
 
 /* footer */
 .footer {
+  margin-top: auto;
   width: 100%;
-  height: 95.5px;
+  background-color: #f2f2f2;
+}
+
+.footer .top {
+  font-size: 15px;
+  color: #70757a;
+  border-bottom: 1px solid #dadce0;
+  padding: 15px 30px;
+}
+
+.footer .bottomNav {
+  width: 100%;
+  height: 46.5px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .bottomNav a {
+  color: #70757a;
+  padding: 15px;
+  cursor: pointer;
 }
