@@ -77,8 +77,7 @@ button {
 }
 
 .header a.menu > svg {
-  width: 24px;
-  height: 24px;
+  fill: #5f6368;
 }
 
 .header button {
@@ -101,6 +100,87 @@ button {
 }
 
 /* main */
+main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12% 0 20%;
+}
+
+main > img {
+  width: 272px;
+  height: 92px;
+}
+
+main .content {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content .inputWrapper {
+  max-width: 582px;
+  width: 90%;
+  height: 44px;
+  padding: 0 8px 0 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .content .inputWrapper:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+main .content .inputWrapper > svg {
+  fill: #9aa0a6;
+  margin-right: 13px;
+}
+
+main .content .inputWrapper input {
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+  height: 34px;
+  border: 0;
+}
+
+main .content .buttonWrapper {
+  padding-top: 18px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .buttonWrapper button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .content .buttonWrapper button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
 
 /* footer */
 .footer {
