@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-main {
+main,
+section {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -12,11 +13,13 @@ main {
   align-items: flex-start;
 }
 
-main strong {
+main strong,
+section strong {
   margin: 12px 20px;
 }
 
-main button {
+main button,
+section button {
   user-select: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;

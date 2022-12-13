@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import "./app.css";
 
 function App() {
+  return <Counter />;
+}
+
+export default App;
+
+function Counter() {
   const [counter, setCounter] = useState(0);
 
   const onClickIncrease = () => {
@@ -26,4 +32,27 @@ function App() {
   );
 }
 
-export default App;
+function ErrorCounter() {
+  let counter = 0;
+  console.log(counter);
+
+  const onClickIncrease = () => {
+    counter += 1;
+  };
+
+  const onClickDecrease = () => {
+    counter -= 1;
+  };
+
+  return (
+    <main>
+      <button type="button" onClick={onClickDecrease}>
+        -
+      </button>
+      <strong>{counter}</strong>
+      <button type="button" onClick={onClickIncrease}>
+        +
+      </button>
+    </main>
+  );
+}
