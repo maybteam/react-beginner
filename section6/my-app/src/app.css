@@ -32,3 +32,25 @@ section button {
   min-width: 40px;
   cursor: pointer;
 }
+
+.refCounter {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 24px;
+  align-items: flex-start;
+}
+
+.refCounter input {
+  min-width: 300px;
+  padding: 12px;
+}
+
+.refCounter button {
+  background-color: #ebebeb;
+  margin-left: 12px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+}
