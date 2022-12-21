@@ -1,0 +1,18 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 46px;
+  margin: 24px auto 0;
+  font-weight: 700;
+}
+
+.todayDate {
+  font-size: 20px;
+  font-weight: 500;
+}
